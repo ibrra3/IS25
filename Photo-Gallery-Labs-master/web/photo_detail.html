@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<link rel="icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="web\js\utils\include.js"></script>
+
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/libs/bootstrap.min.js"></script>
+        <script src="js/photo_detail.js" type="module"></script>
+	
+</header>
+
+</head>
+<body>
+<header  class="container-fluid p-0">
+	<h4 class="text-center fw-light">
+		<i class="fa fa-camera-retro  "></i> Photo Detail
+	</h4>
+</header>
+<main class="container">
+	<aside class= "row">
+		<div id="errors" class="form-group col-sm"></div>
+	</aside>
+	<section class="row">	
+			<div id="photo-details" class="col-md-6 p-2 bg-light border boder-secondary rounded"></div> <!-- Photo details will be here -->
+			<div id="photo-edition" class="col-md-6" title="Click on the trash icon to clean or in a star to rate!">
+			<div class="com-md-12 ">
+				<button class="btn btn-secondary col-md-3 mr-1" onclick="window.history.back()">
+					<i class="fa fa-undo mr-2"></i>Back
+				</button>
+				<button class="btn btn-secondary col-md-3 mr-1" id="button-edit">
+					<i class="fa fa-edit mr-2"></i>Edit
+				</button>
+				<button class="btn btn-danger col-md-3" id="button-delete">
+					<i class="fa fa-trash mr-2"></i>Delete
+				</button>
+			</div>
+			<form class="col-md-12 mt-2">
+				<select id="rating-input" name="rating" class="form-control col-md-8 text-success fw-bold">
+					<option value="0">(0)☆☆☆☆☆</option>
+					<option value="1">(1)★☆☆☆☆</option>
+					<option value="2">(2)★★☆☆☆</option>
+					<option value="3">(3)★★★☆☆</option>
+					<option value="4">(4)★★★★☆</option>
+					<option value="5">(5)★★★★★</option>
+				</select>
+				<button type= "submit" class= "btn btn-success col-md-3 mt-2" disabled>
+						<i class="fa fa-send mr-2"></i>Rate
+				</button>
+			</form>	
+		</article>
+	</section>
+</div>
+</body>
+</html >
