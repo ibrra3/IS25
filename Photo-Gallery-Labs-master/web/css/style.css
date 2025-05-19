@@ -6,6 +6,41 @@
     background-color: #227765;
     color: #000000;
 }
+
+/* -------------------------------------------------------------------  DETAILS         --------------------- */
+
+section.row.d-flex.align-items-end {
+    min-height: 400px; /* Adjust as needed for your image height */
+    border: 5px solid #000000;
+    border-radius: 8px;
+}
+
+#photo-edition {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 0; /* Remove auto margin so it stays next to the image */
+    margin-bottom: 0;
+    height: 100%;
+}
+#photo-details,
+#photo-edition,
+header.container-fluid {
+        color: black;
+        background-color: #03382e;
+
+    border: 2px solid #000000;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    
+}
+#photo-edition{
+    justify-content: flex-start;
+}
+#edits{
+    justify-content: center;
+}
 /* -------------------------------------------------------------------   CARDS         --------------------- */
 .card-card{
     height: 100%;            /* Crucial: Makes the card fill the height of its parent Bootstrap column */
@@ -33,7 +68,7 @@
 
 
 .card-image-area {
-  height: 300px;           /* <<< SET A FIXED HEIGHT for the image display area. Adjust this value as needed! */
+  height: 400px;           /* <<< SET A FIXED HEIGHT for the image display area. Adjust this value as needed! */
   width:auto ;                     /* d-flex, justify-content-center, align-items-center, pt-3 are applied via classes in the JS */
  /* overflow: hidden; */  /* Optional: Use if images might overflow and you want to clip them.
                             if you later choose to use object-fit: cover on the image directly. */

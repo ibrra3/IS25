@@ -28,7 +28,7 @@
             "photoId",
             "tagId"
         ],
-        "auth_required": true,
+        "auth_required": false,
         "allowed_roles": [
             "*"
         ]
@@ -42,7 +42,7 @@
             "photoId",
             "tagId"
         ],
-        "auth_required": true,
+        "auth_required": false,
         "allowed_roles": [
             "*"
         ]
@@ -52,7 +52,7 @@
         "route": "/photostags/$photoTagId",
         "method": "DELETE",
         "sql": "DELETE FROM photostags WHERE photoTagId = $photoTagId",
-        "auth_required": true,
+        "auth_required": false,
         "allowed_roles": [
             "*"
         ]

@@ -51,7 +51,7 @@ function main() {
             console.log("Form is valid. Would proceed with API call to register user here.");
             setTimeout(function() {
                 window.location.href = "index.html";
-            }, 5000);
+            }, 5000); //                                                3. Redirect to index.html after 5 seconds
         }
     }
 }

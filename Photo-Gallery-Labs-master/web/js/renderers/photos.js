@@ -34,6 +34,28 @@ const photoRenderer = {
 		return card;
 	},
 
+	asCard2: function (photo) { //			DEVUELVE AVATAR , USA PHOTOS WITH USER --------------
+		// This object is expected to have properties like 	photoId, url (image source), title, description, and userId.
+
+		let html = `<div class="col-md-4">
+					<div class="card bg-dark text-light">
+						<a href="photo_detail.html?photoId=${photo.photoId}">
+						<img src="${photo.url}" class="card-img-top">
+						</a>
+					<div class="card-body">
+						<h5 class="card-title text-center">${photo.title}</h5>
+						<p class="card-text">${photo.description}</p>
+						<p class="text-end">
+							@${photo.username}
+							<img src="${photo.avatarUrl}" class="photo-user-avatar">
+						</p>
+					</div>
+					</div>
+					</div>`;
+		let card = parseHTML(html);
+		return card;
+	},
+
 	//					 take up 4 out of 12 columns and has different style than asCard ascard as card		
 	photoAsCard: function (photo) {
 		let html = `<div class="col-md-4">

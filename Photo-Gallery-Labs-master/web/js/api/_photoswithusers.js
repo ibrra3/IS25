@@ -10,7 +10,8 @@
 "use strict";
 
 import { BASE_URL, requestOptions } from './common.js';
-
+// devuelve todas las filas de la tabla Photos y adicionalmente, para cada una de ellas, el nombre del usuario que subio la
+//  foto y la URL de su avatar.
 const photoswithusersAPI_auto = {
 
     /** Gets all entries from 'photoswithusers' */
